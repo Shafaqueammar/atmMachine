@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>ATM Machine </h1>
+        <div id="login-section">
+            <input type="text" id="accountNumber" placeholder="Account Number">
+            <input type="password" id="pin" placeholder="PIN">
+            <button onclick="login()">Login</button>
+
+            <p id="error-message" style="color:red;"></p>
+        </div>
+
+        <div id="atm-section" style="display: none;">
+            <h2>Welcome to ATM</h2>
+            <button onclick="withdraw()">Withdraw</button>
+            <br>
+            <button onclick="checkBalance()">Check Balance</button>
+            <br>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
